@@ -262,7 +262,6 @@ header {
     grid-template-columns: repeat(4,1fr);   
     justify-content: center;
     gap: 1.5rem;
-    margin-left: 100px;
 }
 .skill-box .bx{
    font-size: 1.8rem;
@@ -533,6 +532,7 @@ header {
   position: fixed;
   bottom: -100%;
   right: 1.5rem;
+  z-index: 100;
 }
 .scroll-top .bx {
   padding: 8px;
@@ -559,7 +559,6 @@ header {
 @media(max-width: 910px){
   .skill-content{
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 100px;
   }
 }
 @media (max-width: 892px) {
@@ -594,9 +593,7 @@ header {
   .home-text p {
     font-size: 0.825rem;
   }
-  .skill-content{
-    margin-left: 40px;
-  }
+
   .services-content {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -646,7 +643,6 @@ header {
     margin-bottom: 1.3rem;
   }
   .skill-content{
-    margin-left: 100px;
     grid-template-columns: repeat(2, 1fr);
   }
   /* .projects-content {
@@ -654,11 +650,7 @@ header {
   } */
 }
 
-@media(max-width: 555px){
-  .skill-content{
-    margin-left: 50px;
-  }
-}
+
 
 @media (max-width: 450px) {
   .home {
@@ -705,7 +697,6 @@ header {
     grid-template-columns: 1fr;
   }
   .certificate-box .certificate-done {
-
     font-size: 0.82rem;
   }
   .footer-link {
@@ -715,8 +706,7 @@ header {
 }
 @media(max-width: 390px){
   .skill-content{
-    margin-left: 100px;
-    grid-template-columns: 1fr;
+    grid-template-columns: inherit;
   }
 }
 @media (max-width: 325px) {
