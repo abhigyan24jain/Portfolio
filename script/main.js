@@ -7,7 +7,7 @@ menu.onclick = () =>{
 };
 
 window.onscroll = () =>{
-  // navbar.classList.toggle("open-menu")
+  navbar.classList.remove("open-menu")
   menu.classList.remove("move");
 };
         
