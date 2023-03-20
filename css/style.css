@@ -548,6 +548,7 @@ header {
 .scroll-active {
   bottom: 2rem;
   transition: 0.3s;
+  z-index: 100;
 }
 
 @media (max-width: 990px) {
