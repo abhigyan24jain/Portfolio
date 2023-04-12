@@ -9,7 +9,7 @@
   scroll-padding-top: 2rem;
 }
 :root {
-  --main-color: #647bff;
+  /* --main-color: #647bff;
   --body-color: #1a1a1d;
   --container-color: #171b3c;
   --heading-color: #373757;
@@ -17,7 +17,17 @@
   --box1-color: #3d3c42;
   --bg-color: #fff;
   --img-color: #98a7fc;
-  --btn-color: #546eff;
+  --btn-color: #546eff; */
+  --main-color: #2B3467;
+  --body-color: #fff0cc;
+  --container-color: #ffe59d;
+  --heading-color: #373757;
+  --box-color: #3c577a;
+  --box1-color: #3d3c42;
+  --bg-color: #EB455F;
+  --img-color: #ffda80;
+  --btn-color: #ffd057;
+  
 }
 body {
   color: var(--bg-color);
@@ -69,7 +79,7 @@ header {
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--main-color);
+  color: #2B2024;
 }
 .navbar {
   display: flex;
