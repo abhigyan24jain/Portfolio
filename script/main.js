@@ -98,17 +98,17 @@ sr.reveal(".about-text", { delay: 300 });
 sr.reveal(".about-btn", { delay: 100, interval: 50 });
 
 sr.reveal(".skill", { delay: 50 });
-sr.reveal(".skill-box", { distance: "20px", delay: 50, interval: 100 });
+sr.reveal(".skill-box", { delay: 50, interval: 100 });
 
-sr.reveal(".certificate", { delay: 50 });
+sr.reveal(".certificate", { delay: 100 });
 
-sr.reveal(".contact", { delay: 50 });
-sr.reveal(".name", { delay: 50 });
-sr.reveal(".email", { delay: 100 });
-sr.reveal(".message", { delay: 150 });
-sr.reveal(".send-btn", { delay: 50 });
+sr.reveal(".contact", { delay: 100 });
+sr.reveal(".name", { delay: 100 });
+sr.reveal(".email", { delay: 200 });
+sr.reveal(".message", { delay: 300 });
+sr.reveal(".send-btn", { delay: 100 });
 
-sr.reveal(".social", { delay: 50 });
-sr.reveal(".footer-link", { delay: 100 });
-sr.reveal(".send-btn", { delay: 150 });
-sr.reveal(".copy", { delay: 200 });
+sr.reveal(".social", { delay: 100 });
+sr.reveal(".footer-link", { delay: 200 });
+sr.reveal(".send-btn", { delay: 300 });
+sr.reveal(".copy", { delay: 400 });
