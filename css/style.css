@@ -1,5 +1,6 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -9,25 +10,15 @@
   scroll-padding-top: 2rem;
 }
 :root {
-  /* --main-color: #647bff;
-  --body-color: #1a1a1d;
-  --container-color: #171b3c;
-  --heading-color: #373757;
-  --box-color: #182747;
-  --box1-color: #3d3c42;
-  --bg-color: #fff;
-  --img-color: #98a7fc;
-  --btn-color: #546eff; */
-  --main-color: #2B3467;
+  --main-color: #2b3467;
   --body-color: #fff0cc;
   --container-color: #ffe59d;
   --heading-color: #373757;
   --box-color: #3c577a;
   --box1-color: #3d3c42;
-  --bg-color: #EB455F;
+  --bg-color: #eb455f;
   --img-color: #ffda80;
   --btn-color: #ffd057;
-  
 }
 body {
   color: var(--bg-color);
@@ -79,7 +70,7 @@ header {
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #2B2024;
+  color: #2b2024;
 }
 .navbar {
   display: flex;
@@ -241,23 +232,75 @@ header {
   font-weight: 700;
   margin: 1rem 0;
 }
-.btn {
-  font-size: 0.97rem;
+
+/* Layout Styling */
+
+#btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 0 20px 0;
+}
+
+/* Button Styles */
+
+.button {
   display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid var(--bg-color);
+  margin: 20px 20px 20px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
   align-items: center;
-  column-gap: 0.5rem;
-  color: var(--bg-color);
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: var(--btn-color);
+}
+
+#button {
+  color: var(--heading-color);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button div {
+  position: relative;
+  left: 0;
+  transition: all 0.35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  color: var(--heading-color);
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+#button i {
+  width: 20px;
+  height: auto;
+}
+
+#button:hover #dub-arrow {
+  left: 0;
   background-color: var(--main-color);
-  padding: 12px 16px;
-  border-radius: 0.4rem;
-  margin-top: 1rem;
+  color: var(--btn-color);
 }
-.btn .bx {
-  font-size: 1.2rem;
-}
-.btn:hover {
-  background: var(--btn-color);
-  transition: 0.3 all linear;
+
+#button:hover div {
+  left: 150px;
 }
 .about-text p {
   font-size: 0.938rem;
@@ -266,39 +309,19 @@ header {
   margin-bottom: 1.5rem;
 }
 /* Skill Section */
-.skill-content{      
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);   
-    justify-content: center;
-    gap: 1.5rem;
+.skill-content {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 1.5rem;
 }
-.skill-box .bx{
-   font-size: 1.8rem;
+.skill-box .bx {
+  font-size: 1.8rem;
 }
-.skill-box span{
-    text-align: center;
+.skill-box span {
+  text-align: center;
 }
-/* Project Section */
-/*
-.projects-content{
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
-    gap: 1.5rem;
-} 
-.project-box{
-    padding: 20px 10px;
-    background: var(--box-color);
-    border-radius: 0.4rem;
-    text-align: center;
-}
-.project-box h2{
-    font-size: 1.2rem;
-}
-.project-box span{
-    font-size: 0.845rem;
-} */
 
 .services-content {
   display: grid;
@@ -335,82 +358,6 @@ header {
   font-size: 0.9rem;
 }
 
-/* Portfolio Section */
-/* .portfolio-content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
-
-}
-.portfolio-ox{
-    position: relative;
-    width: 100%;
-    height: 320px;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-.portfolio-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.portfolio-overlay{
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: hsl(234, 45%, 16%, 0.7);
-}
-.portfolio-overlay h2{
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.portfolio-overlay.bx{
-    font-size: 24px;
-    padding: 10px;
-    background: var(--main-color);
-    color: var(--bg-color);
-    border-radius: 4px;
-}
-.portfolio-overlay .bx:hover{
-    background-color: var(--btn-color);
-    transition: 0.3s all linear;
-}
-.portfolio-box:hover .portfolio-overlay{
-    top: 0;
-    transition: 0.3s all ease;
-}
-*/
-
-
-/* Project Section */
-/*
-.projects-content{
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
-    gap: 1.5rem;
-} 
-.project-box{
-    padding: 20px 10px;
-    background: var(--box-color);
-    border-radius: 0.4rem;
-    text-align: center;
-}
-.project-box h2{
-    font-size: 1.2rem;
-}
-.project-box span{
-    font-size: 0.845rem;
-} */
-
 .certificate {
   max-width: 750px;
   margin: auto;
@@ -426,14 +373,14 @@ header {
   text-align: center;
   margin-bottom: 3.5rem !important;
 }
-.certificate-box .bx{
-    font-size: 2rem;
-    color: var(--main-color);
-    margin-bottom: 0.5rem;
+.certificate-box .bx {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
 }
-.certificate-box .certificate-done{
-    font-size: 0.89rem;
-    margin-bottom: 1rem;
+.certificate-box .certificate-done {
+  font-size: 0.89rem;
+  margin-bottom: 1rem;
 }
 .certificate-done {
   display: flex;
@@ -450,21 +397,10 @@ header {
   font-size: 0.84rem;
   margin: 0.5rem 0 0.7rem;
 }
-.divimg{
+.divimg {
   margin-bottom: 30px;
 }
-/* .certificate-done img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 4px;
-  border: 2px solid var(--main-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  object-fit: cover;
-  object-position: center;
-} */
+
 .swiper-pagination-bullet {
   width: 6px !important;
   height: 6px !important;
@@ -567,8 +503,8 @@ header {
     width: 90%;
   }
 }
-@media(max-width: 910px){
-  .skill-content{
+@media (max-width: 910px) {
+  .skill-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -653,15 +589,13 @@ header {
     font-size: 0.825rem;
     margin-bottom: 1.3rem;
   }
-  .skill-content{
+  .skill-content {
     grid-template-columns: repeat(2, 1fr);
   }
   /* .projects-content {
     grid-template-columns: repeat(2, 200px);
   } */
 }
-
-
 
 @media (max-width: 450px) {
   .home {
@@ -697,14 +631,14 @@ header {
   .about-text {
     text-align: center;
   }
-  .skill-content{
+  .skill-content {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .services-content
   /* .portfolio-content, */
-  /* .projects-content */{ 
+  /* .projects-content */ {
     grid-template-columns: 1fr;
   }
   .certificate-box .certificate-done {
@@ -715,8 +649,8 @@ header {
     row-gap: 1rem;
   }
 }
-@media(max-width: 390px){
-  .skill-content{
+@media (max-width: 390px) {
+  .skill-content {
     grid-template-columns: inherit;
   }
 }
@@ -724,7 +658,7 @@ header {
   .navbar {
     width: 100%;
   }
-  
+
   /* .project-box {
     height: 190px;
   } */
